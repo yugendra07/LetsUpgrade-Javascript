@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day : 1 Difference betweenvar, let and const</title>
+</head>
+<body>
+    <h2 style="background-color: yellow;"> Q2) difference between var let and const in javascript with example </h2>
+
+        <h3>A var variable can be redeclared and updated. <br>
+        A let variable be be updated but not redeclared.</p></h3>
+        <p style="background-color: rgb(20, 238, 238);">
+            An example of trying to redeclare a let variable:<br>
+            // In editor:<br>
+            &lt;script<br>
+             let points = 50;<br>
+             let points = 60;<br>
+             /script&gt;<br>
+             // In the console I get an error:<br>
+Uncaught SyntaxError: Identifier 'points' has already been declared
+        </p>
+        <p style="background-color: cornsilk;">how can i update it<br>
+            let points = 50;<br>
+            points = 60;<br>
+            // In console:<br>
+            points<br>
+            // Returns:<br>
+            60</p>
+            <P > <h4 style="background-color:rgb(253, 72, 97)">let and var can be reassigned to a new value while const cannot be reassigned.</h4></P>
+            <p style="background-color: antiquewhite;"> var a = 10;<br>
+                a = 20;<br>
+                //output: 20<br>
+                console.log(a);<br>
+                <br>
+                let b = 'hello';<br>
+                b = 'world';<br>
+                //output: 'world'<br>
+                console.log(b);<br>
+                <br>
+                const c = 'hello'<br>
+                //Error: Uncaught TypeError: Assignment to constant variable.<br>
+                c = 'world'  </p>
+
+                <p style="background-color:rgb(179, 175, 175)">
+                    
+                    *Scope<br>
+                    var is function-scoped.<br>
+                    let and const are block-scoped(any code within {} braces).<br>
+                    Here is an article on Understanding Scope in Javascript.<br>
+                    *Hoisting<br>
+                    var is always hoisted to the top of their respective scope.<br>
+                    let and const is also hoisted but will throw an error if the variable is used before the declaration. It is a little complicated and we will discuss it in a separate article dedicated to this specific topic.
+                </p>
+</body>
+</html>
+
